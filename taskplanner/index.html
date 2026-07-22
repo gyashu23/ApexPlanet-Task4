@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <h2>Task Planner</h2>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#todo">Tasks</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Stay Organized, Stay Productive</h1>
+            <p>Plan your daily tasks easily with our Task Planner.</p>
+            <a href="#todo" class="btn">Get Started</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="features" id="features">
+        <h2>Features</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Easy Planning</h3><br>
+                <p>Create and organize your daily tasks in seconds.</p>
+            </div>
+            <div class="card">
+                <h3>Responsive</h3><br>
+                <p>Works perfectly on desktop, tablet and mobile.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- To-Do Section -->
+    <section class="todo" id="todo">
+    <h2>Tasks</h2>
+        <div class="todo-box">
+          <input type="text" id="taskInput" placeholder="Enter your task">
+        <button id="addBtn">Add Task</button>
+       </div>
+         <div class="filters">
+         <button id="allBtn">All</button>
+         <button id="completedBtn">Completed</button>
+             <button id="pendingBtn">Pending</button>
+         </div>
+         <ul id="taskList"></ul>
+      </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name">
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email">
+            <textarea
+                id="message"
+                placeholder="Your Message"></textarea>
+            <button type="submit">
+                Send Message
+            </button>
+        </form>
+    </section>
+
+    <footer>
+        <p>@ 2026 Task Planner. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
